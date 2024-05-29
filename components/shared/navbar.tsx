@@ -14,7 +14,7 @@ import { Input } from "@nextui-org/input";
 import { link as linkStyles } from "@nextui-org/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
-
+import { Avatar } from "@nextui-org/react";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
@@ -34,7 +34,8 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-center items-center gap-1" href="/">
-            <Logo />
+            {/* <Logo /> */}
+            <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026302d" size="md" />
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
