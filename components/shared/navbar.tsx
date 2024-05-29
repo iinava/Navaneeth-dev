@@ -1,3 +1,4 @@
+"use client"
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -25,12 +26,13 @@ import {
   SearchIcon,
   Logo,
 } from "@/components/icons";
+import React from "react";
 
 export const Navbar = () => {
-  
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <NextUINavbar maxWidth="xl" position="sticky" isBordered isBlurred>
+    <NextUINavbar maxWidth="xl" position="sticky" isBordered isBlurred  isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-center items-center gap-1" href="/">
@@ -79,7 +81,7 @@ export const Navbar = () => {
           <GithubIcon className="text-default-500" />
         </Link>
         <ThemeSwitch />
-        <NavbarMenuToggle />
+        <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
       </NavbarContent>
 
       <NavbarMenu>
@@ -88,7 +90,10 @@ export const Navbar = () => {
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
                 className="text-[foreground] hover:text-green-400 text-2xl my-5"
-                href="#"
+                href={item.href}
+                onClick={(e)=>{
+                  setIsMenuOpen(false)
+                }}
               >
                 {item.label}
               </Link>

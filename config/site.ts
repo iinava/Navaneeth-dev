@@ -20,15 +20,15 @@ export const siteConfig = {
   navMenuItems: [
     {
       label: "Home",
-      href: "/profile",
+      href: "/",
     },
     {
       label: "Work",
-      href: "/dashboard",
+      href: "/work",
     },
     {
-      label: "About",
-      href: "/projects",
+      label: "contact",
+      href: "/contact",
     },
    
   ],
