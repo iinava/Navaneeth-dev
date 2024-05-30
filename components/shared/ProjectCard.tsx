@@ -27,7 +27,7 @@ export default function ProjectCard({ item }: { item: any }) {
         {item.name}
         <span>
           <CiLocationArrow1 />
-        </span>{" "}
+        </span>
       </h1>
       <h1 className="text-1xl font-bold dark:text-neutral-400">
         {item.description}

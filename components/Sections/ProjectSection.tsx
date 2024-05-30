@@ -7,8 +7,9 @@ import ProjectCard from "../shared/ProjectCard";
 import { Link } from "@nextui-org/link";
 export default function ProjectSection() {
   const featuredprojects = projectinfo.filter((project) => {
-    project.isfeatured == "true";
+    return project.isfeatured == "true";
   });
+  console.log(featuredprojects);
 
   return (
     <div className="w-full flex flex-col  items-start  text-left py-10">
