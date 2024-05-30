@@ -50,15 +50,6 @@ export const Sociallinks = {
 
 export const projectinfo = [
   {
-    id: "2",
-    image:
-    "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/image.png",
-    name: "Imaginify Ai",
-    description: "  SAAS Image editor with Ai features  ",
-    tag: "Ai",
-    isfeatured: "true",
-  },
-  {
     id: "1",
     image:
       "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/realesto.png?updatedAt=1717076255818",
@@ -68,9 +59,18 @@ export const projectinfo = [
     isfeatured: "true",
   },
   {
+    id: "2",
+    image:
+      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/image.png",
+    name: "Imaginify Ai",
+    description: "  SAAS Image editor with Ai features  ",
+    tag: "Ai",
+    isfeatured: "true",
+  },
+  {
     id: "3",
     image:
-    "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/grow.png?updatedAt=1717082528309",
+      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/grow.png?updatedAt=1717082528309",
     name: "Grow",
     description: "Investment and startup showcase ",
     tag: "Ecommerce",
@@ -129,8 +129,7 @@ export const projectDetailedInfoArray = [
     projectGithub: "https://github.com/iinava/RealEsto",
     firstimage:
       "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/estatehome.png?updatedAt=1717072117859",
-    secondimage:
-      "",
+    secondimage: "",
     firstdescription:
       "Realesto is a platform designed to simplify the process of finding and listing properties. It provides users with a seamless experience to discover available properties and communicate with agents in real-time through a chat option. The project is built using React for the frontend, MongoDB as the database, Prisma for ORM (Object-Relational Mapping), and socket.io for real-time communication.",
     seconddescription:
@@ -169,14 +168,13 @@ export const projectDetailedInfoArray = [
     projectIndustry: "E commerece ",
     projectDate: "3/10/23-2/12/23",
     projectLivelink: "",
-    projectGithub: "https://github.com/iinava/Grow-Investment-Crowdfunding-platform",
+    projectGithub:
+      "https://github.com/iinava/Grow-Investment-Crowdfunding-platform",
     firstimage:
       "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/grow.png?updatedAt=1717082528309",
-    secondimage:
-      "",
+    secondimage: "",
     firstdescription:
       "Grow is designed to facilitate collaboration between startups and investors, providing a platform for startups to showcase their potential and investors to discover and support promising opportunities. The platform emphasizes user-friendliness, transparency, and community engagement.",
-    seconddescription:
-      "",
+    seconddescription: "",
   },
 ];
