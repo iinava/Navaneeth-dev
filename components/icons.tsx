@@ -10,9 +10,9 @@ export const Logo: React.FC<IconSvgProps> = ({
 }) => (
   <span>
     <img
-      src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_light_background.png"
       alt=""
       className="h-10 w-10"
+      src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_light_background.png"
     />
   </span>
 );

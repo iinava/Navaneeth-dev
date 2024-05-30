@@ -1,12 +1,11 @@
 "use client";
 import React, { useRef, useState } from "react";
-import { Button, Snippet } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import confetti from "canvas-confetti";
-import Clipboard from 'clipboard';
 const ConfettiButton = () => {
   const buttonRef = useRef(null);
-  const email = 'i.navaneeth0@gmail.com';
-  const [copied, setcopied] = useState(false)
+  const email = "i.navaneeth0@gmail.com";
+  const [copied, setcopied] = useState(false);
   const handleConfetti = () => {
     confetti({
       spread: 60,
@@ -17,21 +16,21 @@ const ConfettiButton = () => {
     });
   };
   const handleCopy = () => {
-    console.log("hi");
-
     if (navigator.clipboard) {
       // Use navigator.clipboard for desktop browsers
-      navigator.clipboard.writeText(email)
+      navigator.clipboard
+        .writeText(email)
         .then(() => {
           handleConfetti();
           setcopied(true);
         })
-        .catch(err => {
-          console.error('Failed to copy text: ', err);
+        .catch((err) => {
+          console.error("Failed to copy text: ", err);
         });
     } else {
       // Fallback for mobile browsers using a temporary textarea
       const textField = document.createElement("textarea");
+
       textField.value = email;
       document.body.appendChild(textField);
       textField.select();
@@ -43,21 +42,16 @@ const ConfettiButton = () => {
     }
   };
 
-
   return (
     <Button
       ref={buttonRef}
-      id="copybutton"
       className="h-52 w-52   rounded-full border-2 border-neutral-700  bg-neutral-900   flex justify-center items-center  cursor-pointer"
-      onPress={(e)=>{
-        handleCopy()
+      id="copybutton"
+      onPress={() => {
+        handleCopy();
       }}
     >
-       {
-        copied ? "Email copied 🎉" : "Copy email 🎉"
-       }
-
-      
+      {copied ? "Email copied 🎉" : "Copy email 🎉"}
     </Button>
   );
 };
