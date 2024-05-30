@@ -17,7 +17,7 @@ import { Avatar } from "@nextui-org/react";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import {  GithubIcon } from "@/components/icons";
+import { GithubIcon } from "@/components/icons";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -35,10 +35,7 @@ export const Navbar = () => {
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-center items-center gap-1" href="/">
             {/* <Logo /> */}
-            <Avatar
-              size="md"
-              src={siteConfig.profileicon}
-            />
+            <Avatar size="md" src={siteConfig.profileicon} />
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
@@ -47,10 +44,7 @@ export const Navbar = () => {
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
-                className={clsx(
-                  linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium hover:text-green-400",
-                )}
+                className="data-[active=true]:text-primary data-[active=true]:font-medium hover:text-green-400"
                 color="foreground"
                 href={item.href}
               >
@@ -66,8 +60,6 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-         
-
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
           </Link>

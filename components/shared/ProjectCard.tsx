@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { CiLocationArrow1 } from "react-icons/ci"
+import { CiLocationArrow1 } from "react-icons/ci";
 export default function ProjectCard({ item }: { item: any }) {
   // console.log(item);
 
@@ -23,7 +23,12 @@ export default function ProjectCard({ item }: { item: any }) {
         height={200}
         layout="responsive"
       />
-      <h1 className="text-2xl font-bold flex items-center gap-3">{item.name} <span><CiLocationArrow1 /></span> </h1>
+      <h1 className="text-2xl font-bold flex items-center gap-3">
+        {item.name}
+        <span>
+          <CiLocationArrow1 />
+        </span>{" "}
+      </h1>
       <h1 className="text-1xl font-bold dark:text-neutral-400">
         {item.description}
       </h1>

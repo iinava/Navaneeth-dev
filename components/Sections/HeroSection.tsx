@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { Avatar } from "@nextui-org/react";
+import { Avatar, Link } from "@nextui-org/react";
+import { motion } from "framer-motion";
 import {
   Modal,
   ModalContent,
@@ -13,6 +14,7 @@ import {
 import Image from "next/image";
 import confetti from "canvas-confetti";
 import { profileicon } from "@/config/site";
+import Splitstring from "@/utils/Textanimation";
 
 export default function HeroSection({
   herosectioninfo,
@@ -29,6 +31,12 @@ export default function HeroSection({
       },
     });
   };
+  const charvariants = {
+    hidden: { opacity: 0 },
+    reveal: { opacity: 1 },
+  };
+  const description = Splitstring(herosectioninfo.description);
+  // console.log(description);
 
   return (
     <div className="flex flex-col w-full   gap-4">
@@ -50,9 +58,22 @@ export default function HeroSection({
         <h1 className="dark:text-neutral-400 font-bold">
           {herosectioninfo.position}
         </h1>
-        <p className="text-sm md:text-6xl dark:text-neutral-400">
-          {herosectioninfo.description}
-        </p>
+        <motion.div
+          initial="hidden"
+          whileInView="reveal"
+          transition={{ staggerChildren: 0.02 }}
+        >
+          {description.map((char) => (
+            <motion.span
+              key={char}
+              variants={charvariants}
+              transition={{ duration: 0.5 }}
+              className="text-sm md:text-6xl dark:text-neutral-400"
+            >
+              {char}
+            </motion.span>
+          ))}
+        </motion.div>
         <div className="w-[300px]">
           <Button className="w-[300px" size="sm">
             <div className="w-2 h-2 rounded-full bg-green-400 animate-ping" />{" "}
@@ -61,6 +82,8 @@ export default function HeroSection({
         </div>
       </div>
       <Button
+        as={Link}
+        href={"mailto:i.navaneeth0@gmail.com"}
         className="border-neutral-800 lg:hidden"
         color="default"
         variant="bordered"

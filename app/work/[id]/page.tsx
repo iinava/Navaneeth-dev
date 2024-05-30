@@ -21,9 +21,9 @@ const page: FC<PageProps> = ({ params }) => {
   // console.log(params.id);
   const id = params.id;
 
-  const projectDetailedInfo = projectDetailedInfoArray.find(
-    (project) => project.projectid === id,
-  );
+  const projectDetailedInfo = projectDetailedInfoArray.find((project) => {
+    project.projectid === id;
+  });
 
   if (!projectDetailedInfo) {
     return <div>Some unexpected error occured : (</div>;
@@ -37,7 +37,10 @@ const page: FC<PageProps> = ({ params }) => {
           <span>{" > "}</span>
           <span>works</span>
           <span>{" > "}</span>
-          <span className="text-green-400"> {projectDetailedInfo.projectname}</span>
+          <span className="text-green-400">
+            {" "}
+            {projectDetailedInfo.projectname}
+          </span>
         </p>
       </div>
       <h1 className="text-5xl font-bold">{projectDetailedInfo.projectname}</h1>
@@ -109,12 +112,14 @@ const page: FC<PageProps> = ({ params }) => {
         />
 
         <p>{projectDetailedInfo.firstdescription}</p>
-        <div
-          className="w-full h-[250px] md:h-[500px] rounded-2xl bg-cover bg-center border border-neutral-600"
-          style={{
-            backgroundImage: `url('${projectDetailedInfo.secondimage}')`,
-          }}
-        />
+        {projectDetailedInfo.secondimage && (
+          <div
+            className="w-full h-[250px] md:h-[500px] rounded-2xl bg-cover bg-center border border-neutral-600"
+            style={{
+              backgroundImage: `url('${projectDetailedInfo.secondimage}')`,
+            }}
+          />
+        )}
 
         <p className="mb-5">{projectDetailedInfo.seconddescription}</p>
       </div>

@@ -24,7 +24,7 @@ export default function DocsPage() {
           <Button as={Link} href={Sociallinks.linkedin} variant="light">
             <FaLinkedin className="text-3xl" />
           </Button>
-          <Button as={Link}  href="" variant="light" className="hidden">
+          <Button as={Link} href="" variant="light" className="hidden">
             <FaTwitterSquare className="text-3xl" />
           </Button>
         </div>
