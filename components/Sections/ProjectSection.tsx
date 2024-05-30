@@ -7,7 +7,7 @@ import ProjectCard from "../shared/ProjectCard";
 import { Link } from "@nextui-org/link";
 export default function ProjectSection() {
   const featuredprojects = projectinfo.filter((project) => {
-    project.isfeatured == "true";
+   return project.isfeatured == "true";
   });
 
   return (
