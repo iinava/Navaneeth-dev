@@ -12,6 +12,7 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 import confetti from "canvas-confetti";
+import { profileicon } from "@/config/site";
 
 export default function HeroSection({
   herosectioninfo,
@@ -37,7 +38,7 @@ export default function HeroSection({
           className="cursor-pointer"
           color="success"
           size="lg"
-          src="https://i.pravatar.cc/150?u=a04258114e29026302d"
+          src={profileicon}
           onClick={() => {
             onOpen();
             handleConfetti();
@@ -85,7 +86,7 @@ export default function HeroSection({
                   src="/egg.png"
                   width={200}
                 />
-                <p>something will be here soon.. keep coming back</p>
+                <p>something will be here soon.. keep coming back </p>
               </ModalBody>
               <ModalFooter>
                 <Button variant="light" onPress={onClose}>

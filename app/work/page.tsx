@@ -6,7 +6,7 @@ export default function work() {
     <div>
       <h1 className="text-5xl sm:text-7xl font-bold  my-2">Work</h1>
       <p className="sm:text-2xl  ">
-        We do not just create brands, we craft unforgettable <br /> experiences
+          not just create brands,  craft unforgettable <br /> experiences
         that leave a lasting impression.
       </p>
 
@@ -17,6 +17,7 @@ export default function work() {
           {projectinfo.map((project) => (
             <ProjectCard key={project.id} item={project} />
           ))}
+
         </div>
         <br />
       </div>

@@ -45,7 +45,7 @@ const ConfettiButton = () => {
   return (
     <Button
       ref={buttonRef}
-      className="h-52 w-52   rounded-full border-2 border-neutral-700  bg-neutral-900   flex justify-center items-center  cursor-pointer"
+      className="h-52 w-52   rounded-full border-2 border-neutral-700   dark:bg-neutral-900   flex justify-center items-center  cursor-pointer"
       id="copybutton"
       onPress={() => {
         handleCopy();

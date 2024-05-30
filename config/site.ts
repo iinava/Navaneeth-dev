@@ -1,8 +1,9 @@
 export type SiteConfig = typeof siteConfig;
-
+export const profileicon="https://i.pravatar.cc/150?u=a04258114e29026302d"
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Navaneeth-dev",
+  profileicon:"https://i.pravatar.cc/150?u=a04258114e29026302d",
+  description: "Full stack software/web developer with Next js , Mongo, Django expertise",
   navItems: [
     {
       label: "home",

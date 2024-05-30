@@ -17,7 +17,7 @@ import { Avatar } from "@nextui-org/react";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { TwitterIcon, GithubIcon } from "@/components/icons";
+import {  GithubIcon } from "@/components/icons";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -37,7 +37,7 @@ export const Navbar = () => {
             {/* <Logo /> */}
             <Avatar
               size="md"
-              src="https://i.pravatar.cc/150?u=a04258114e29026302d"
+              src={siteConfig.profileicon}
             />
           </NextLink>
         </NavbarBrand>

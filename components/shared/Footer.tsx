@@ -9,8 +9,8 @@ export default function Footer() {
       <Divider className="my-4" />
       <div className="flex gap-4 flex-col">
         <h1 className="md:w-[600px]">
-          We specialize in crafting exceptional digital experiences to help our
-          clients achieve their business goals.
+        {/* committed to creating outstanding digital solutions that empower individuals and businesses to thrive in the digital realm. */}
+        crafting exceptional digital experiences to help  clients achieve their business goals.
         </h1>
         <Button className="bg-black w-[200px] dark:bg-neutral-400 text-white dark:text-black">
           Get Resume
@@ -20,8 +20,7 @@ export default function Footer() {
 
       <div className=" flex-col  ">
         <p className="text-[13px] flex items-center gap-2 ">
-          {" "}
-          Portfolio crafted with love by <FaGithub /> iinava 💗
+          💗 if u come this far give a star on <FaGithub /> <a className="underline underline-offset-2 hover:text-green-400" href="https://github.com/iinava/Navaneeth-dev">iinava 🔗</a> 
         </p>
       </div>
     </div>

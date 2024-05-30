@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { CiLocationArrow1 } from "react-icons/ci"
 export default function ProjectCard({ item }: { item: any }) {
   // console.log(item);
 
@@ -9,7 +10,7 @@ export default function ProjectCard({ item }: { item: any }) {
 
   return (
     <button
-      className="border border-neutral-600 hover:bg-neutral-900  w-[100%]   lg:w-[30%] rounded-2xl p-4  flex flex-col gap-2  cursor-pointer"
+      className="border border-neutral-600 transition-all ease-out hover:scale-110  w-[100%]   lg:w-[30%] rounded-2xl p-4  flex flex-col gap-2  cursor-pointer"
       onClick={() => {
         router.push(`/work/${item.id}`);
       }}
@@ -22,7 +23,7 @@ export default function ProjectCard({ item }: { item: any }) {
         height={200}
         layout="responsive"
       />
-      <h1 className="text-2xl font-bold">{item.name}</h1>
+      <h1 className="text-2xl font-bold flex items-center gap-3">{item.name} <span><CiLocationArrow1 /></span> </h1>
       <h1 className="text-1xl font-bold dark:text-neutral-400">
         {item.description}
       </h1>

@@ -37,7 +37,7 @@ const page: FC<PageProps> = ({ params }) => {
           <span>{" > "}</span>
           <span>works</span>
           <span>{" > "}</span>
-          <span className="text-green-400"> {params.id}</span>
+          <span className="text-green-400"> {projectDetailedInfo.projectname}</span>
         </p>
       </div>
       <h1 className="text-5xl font-bold">{projectDetailedInfo.projectname}</h1>
