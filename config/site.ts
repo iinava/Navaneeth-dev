@@ -61,7 +61,7 @@ export const projectinfo = [
   {
     id: "2",
     image:
-      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/image.png",
+      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/croppedim.png?updatedAt=1717094126479",
     name: "Imaginify Ai",
     description: "  SAAS Image editor with Ai features  ",
     tag: "Ai",
