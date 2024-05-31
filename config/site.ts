@@ -170,11 +170,14 @@ export const projectDetailedInfoArray = [
     projectLivelink: "",
     projectGithub:
       "https://github.com/iinava/Grow-Investment-Crowdfunding-platform",
+    projectGithub:
+      "https://github.com/iinava/Grow-Investment-Crowdfunding-platform",
     firstimage:
       "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/growheader.png?updatedAt=1717142191097",
     secondimage: "",
     firstdescription:
       "Grow is designed to facilitate collaboration between startups and investors, providing a platform for startups to showcase their potential and investors to discover and support promising opportunities. The platform emphasizes user-friendliness, transparency, and community engagement.",
+    seconddescription: "",
     seconddescription: "",
   },
 ];
