@@ -9,8 +9,6 @@ export default function ProjectSection() {
   const featuredprojects = projectinfo.filter((project) => {
     return project.isfeatured == "true";
   });
-  console.log(featuredprojects);
-
   return (
     <div className="w-full flex flex-col  items-start  text-left py-10">
       <h1 className="text-3xl font-bold">Projects</h1>

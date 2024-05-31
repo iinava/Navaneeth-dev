@@ -52,19 +52,19 @@ export const projectinfo = [
   {
     id: "1",
     image:
-      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/real-new.jpg?updatedAt=1717140264341",
-    name: "Realesto",
-    description: "Real estate with chat ",
-    tag: "Realestate",
+      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/imaginify-new.jpg?updatedAt=1717139410027",
+    name: "Imaginify Ai",
+    description: "  SAAS Image editor with Ai features  ",
+    tag: "Ai",
     isfeatured: "true",
   },
   {
     id: "2",
     image:
-      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/imaginify-new.jpg?updatedAt=1717139410027",
-    name: "Imaginify Ai",
-    description: "  SAAS Image editor with Ai features  ",
-    tag: "Ai",
+      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/real-new.jpg?updatedAt=1717140264341",
+    name: "Realesto",
+    description: "Real estate with chat ",
+    tag: "Realestate",
     isfeatured: "true",
   },
   {
@@ -116,27 +116,6 @@ export const herosectioninfo = {
 export const projectDetailedInfoArray = [
   {
     projectid: "1",
-    projectname: "Realesto",
-    projectsubtitle: "Real estate with realtime chat",
-    projectdescription:
-      "Ziggo, the smart suitcase app that lets you control your luggage like a smart home! With Ziggo, you can easily lock and unlock your suitcase,check the battery level, and even receive notifications if your suitcase strays too far from you.",
-
-    projectclient: "Personal project",
-    projectTechStack: " Mern stack , Socket io",
-    projectIndustry: "E commerece ",
-    projectDate: "3/3/24-2/3/24",
-    projectLivelink: "",
-    projectGithub: "https://github.com/iinava/RealEsto",
-    firstimage:
-      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/estateheader.png?updatedAt=1717141736203",
-    secondimage: "",
-    firstdescription:
-      "Realesto is a platform designed to simplify the process of finding and listing properties. It provides users with a seamless experience to discover available properties and communicate with agents in real-time through a chat option. The project is built using React for the frontend, MongoDB as the database, Prisma for ORM (Object-Relational Mapping), and socket.io for real-time communication.",
-    seconddescription:
-      "Property Search: Users can search for properties based on various criteria such as location, price range, property type, etc.  Property Listing: Property owners or agents can easily list their properties on the platform, providing detailed information and images. Real-time Chat: Users can communicate with agents in real-time through a chat option, enabling quick responses to inquiries and facilitating smoother transactions.",
-  },
-  {
-    projectid: "2",
     projectname: "Imaginify Ai",
     projectsubtitle: "SAAS Image Editor",
     projectdescription:
@@ -155,6 +134,27 @@ export const projectDetailedInfoArray = [
       "Imaginify AI is a SaaS application built with Next.js, designed to provide advanced image processing capabilities. By leveraging the capabilities of Cloudinary, Imaginify AI offers features such as object recoloring, object removal, and generative fill, allowing users to enhance and manipulate images effortlessly.",
     seconddescription:
       "The end result is a  Ai editor that makes it easy for users to enjoy the benefits of ai editing without feeling overwhelmed by apis. With imaginify, image manipulations are smarter and  never been easier!",
+  },
+  {
+    projectid: "2",
+    projectname: "Realesto",
+    projectsubtitle: "Real estate with realtime chat",
+    projectdescription:
+      "Ziggo, the smart suitcase app that lets you control your luggage like a smart home! With Ziggo, you can easily lock and unlock your suitcase,check the battery level, and even receive notifications if your suitcase strays too far from you.",
+
+    projectclient: "Personal project",
+    projectTechStack: " Mern stack , Socket io",
+    projectIndustry: "E commerece ",
+    projectDate: "3/3/24-2/3/24",
+    projectLivelink: "",
+    projectGithub: "https://github.com/iinava/RealEsto",
+    firstimage:
+      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/estateheader.png?updatedAt=1717141736203",
+    secondimage: "",
+    firstdescription:
+      "Realesto is a platform designed to simplify the process of finding and listing properties. It provides users with a seamless experience to discover available properties and communicate with agents in real-time through a chat option. The project is built using React for the frontend, MongoDB as the database, Prisma for ORM (Object-Relational Mapping), and socket.io for real-time communication.",
+    seconddescription:
+      "Property Search: Users can search for properties based on various criteria such as location, price range, property type, etc.  Property Listing: Property owners or agents can easily list their properties on the platform, providing detailed information and images. Real-time Chat: Users can communicate with agents in real-time through a chat option, enabling quick responses to inquiries and facilitating smoother transactions.",
   },
   {
     projectid: "3",

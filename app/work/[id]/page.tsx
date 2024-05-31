@@ -19,7 +19,6 @@ export async function generateStaticParams() {
 }
 
 const page: FC<PageProps> = ({ params }) => {
-  console.log(params.id, "i am here");
   const id = params.id;
 
   const projectDetailedInfo = projectDetailedInfoArray.find((project) => {
