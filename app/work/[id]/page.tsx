@@ -7,6 +7,7 @@ interface PageProps {
   };
 }
 import { projectDetailedInfoArray } from "@/config/site";
+import Image from "next/image";
 export async function generateStaticParams() {
   const ids = ["1", "2", "3", "4"];
 
@@ -18,11 +19,11 @@ export async function generateStaticParams() {
 }
 
 const page: FC<PageProps> = ({ params }) => {
-  // console.log(params.id);
+  console.log(params.id, "i am here");
   const id = params.id;
 
   const projectDetailedInfo = projectDetailedInfoArray.find((project) => {
-    project.projectid === id;
+    return project.projectid === id;
   });
 
   if (!projectDetailedInfo) {
@@ -104,20 +105,25 @@ const page: FC<PageProps> = ({ params }) => {
       </div>
 
       <div className=" w-full flex  flex-col gap-7 mt-5 items-center">
-        <div
-          className="w-full h-[250px] md:h-[500px] rounded-2xl bg-cover bg-center border border-neutral-600"
-          style={{
-            backgroundImage: `url('${projectDetailedInfo.firstimage}')`,
-          }}
+        <Image
+          alt="project image"
+          className="rounded-2xl border-3 border-neutral-700 h-[250px]"
+          src={projectDetailedInfo.firstimage}
+          width={300}
+          height={300}
+          layout="responsive"
         />
 
         <p>{projectDetailedInfo.firstdescription}</p>
+
         {projectDetailedInfo.secondimage && (
-          <div
-            className="w-full h-[250px] md:h-[500px] rounded-2xl bg-cover bg-center border border-neutral-600"
-            style={{
-              backgroundImage: `url('${projectDetailedInfo.secondimage}')`,
-            }}
+          <Image
+            alt="project image"
+            className="rounded-2xl border-3 border-neutral-700 h-[250px]"
+            src={projectDetailedInfo.secondimage}
+            width={300}
+            height={300}
+            layout="responsive"
           />
         )}
 

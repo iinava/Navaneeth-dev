@@ -52,7 +52,7 @@ export const projectinfo = [
   {
     id: "1",
     image:
-      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/realesto.png?updatedAt=1717076255818",
+      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/real-new.jpg?updatedAt=1717140264341",
     name: "Realesto",
     description: "Real estate with chat ",
     tag: "Realestate",
@@ -61,7 +61,7 @@ export const projectinfo = [
   {
     id: "2",
     image:
-      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/image.png",
+      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/imaginify-new.jpg?updatedAt=1717139410027",
     name: "Imaginify Ai",
     description: "  SAAS Image editor with Ai features  ",
     tag: "Ai",
@@ -70,7 +70,7 @@ export const projectinfo = [
   {
     id: "3",
     image:
-      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/grow.png?updatedAt=1717082528309",
+      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/grow-new%20(1).jpg?updatedAt=1717135866910",
     name: "Grow",
     description: "Investment and startup showcase ",
     tag: "Ecommerce",
@@ -128,7 +128,7 @@ export const projectDetailedInfoArray = [
     projectLivelink: "",
     projectGithub: "https://github.com/iinava/RealEsto",
     firstimage:
-      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/estatehome.png?updatedAt=1717072117859",
+      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/estateheader.png?updatedAt=1717141736203",
     secondimage: "",
     firstdescription:
       "Realesto is a platform designed to simplify the process of finding and listing properties. It provides users with a seamless experience to discover available properties and communicate with agents in real-time through a chat option. The project is built using React for the frontend, MongoDB as the database, Prisma for ORM (Object-Relational Mapping), and socket.io for real-time communication.",
@@ -171,7 +171,7 @@ export const projectDetailedInfoArray = [
     projectGithub:
       "https://github.com/iinava/Grow-Investment-Crowdfunding-platform",
     firstimage:
-      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/tr:w-1200,h-900/grow.png?updatedAt=1717082528309",
+      "https://ik.imagekit.io/ftrftsprn/portfolio-new/projects/growheader.png?updatedAt=1717142191097",
     secondimage: "",
     firstdescription:
       "Grow is designed to facilitate collaboration between startups and investors, providing a platform for startups to showcase their potential and investors to discover and support promising opportunities. The platform emphasizes user-friendliness, transparency, and community engagement.",

@@ -10,7 +10,7 @@ export default function ProjectCard({ item }: { item: any }) {
 
   return (
     <button
-      className="border border-neutral-600 transition-all ease-out hover:scale-110  w-[100%]   lg:w-[30%] rounded-2xl p-4  flex flex-col gap-2  cursor-pointer"
+      className="border border-neutral-600 transition-all ease-out md:hover:scale-105  w-[100%]   lg:w-[30%] rounded-2xl p-4  flex flex-col gap-2  cursor-pointer"
       onClick={() => {
         router.push(`/work/${item.id}`);
       }}
