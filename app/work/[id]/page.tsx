@@ -26,7 +26,9 @@ const page: FC<PageProps> = ({ params }) => {
   });
 
   if (!projectDetailedInfo) {
-    return <div>Some unexpected error occured : ( please checkout other projects</div>;
+    return (
+      <div>Some unexpected error occured please checkout other projects</div>
+    );
   }
 
   return (
