@@ -15,12 +15,12 @@ export default function Footer() {
         </h1>
         <Button
           as={Link}
-          href="https://drive.google.com/file/d/1-2UAy82HMgp0XTiBlgtloyrkyOMbVlVs/view?usp=sharing"
+          href="https://drive.google.com/file/d/1zbki_6cw1Nvk-dwBIZMJ62DyUdDBb1e6/view"
           className="bg-black w-[200px] dark:bg-neutral-400 text-white dark:text-black"
         >
           Get Resume
         </Button>
-        <br />
+        <br />w
       </div>
 
       <div className=" flex-col  ">
