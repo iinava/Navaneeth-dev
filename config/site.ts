@@ -94,7 +94,7 @@ export const aboutcolinfo = [
     position: "full stack developer intern",
     date: "11/3/4533",
     description:
-      "  I owned a product that was part of Stadia's developer suite, andled design on the website for enabling Bluetooth on StadiaControllers post-sunset",
+      " During my internship as a React - Django developer, I learned a great deal about full-stack web development. I gained hands-on experience in building responsive and dynamic user interfaces using React and managing backend services with Django",
   },
   {
     title: "Education",
@@ -102,7 +102,7 @@ export const aboutcolinfo = [
     position: "Bachelor of computer science",
     date: "06/20 - 04/23",
     description:
-      "  I owned a product that was part of Stadia's developer suite, andled design on the website for enabling Bluetooth on StadiaControllers post-sunset",
+      "I completed my graduation in Computer Science with a CGPA of 6.9 while learning many practical skills and concepts. Throughout my studies, I gained hands-on experience with various programming languages, software development methodologies, and technologies",
   },
 ];
 

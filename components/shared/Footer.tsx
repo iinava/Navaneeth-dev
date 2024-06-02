@@ -20,7 +20,7 @@ export default function Footer() {
         >
           Get Resume
         </Button>
-        <br />w
+        <br />
       </div>
 
       <div className=" flex-col  ">
