@@ -44,16 +44,16 @@ export default function HeroSection({
         <Avatar
           isBordered
           className="cursor-pointer"
-          color="success"
+          color="default"
           size="lg"
           src={profileicon}
           onClick={() => {
-            onOpen();
+            // onOpen();
             handleConfetti();
           }}
         />
         <h1 className="text-3xl md:text-7xl font-bold">
-          {herosectioninfo.name} 👋
+          {herosectioninfo.name}
         </h1>
         <h1 className="dark:text-neutral-400 font-bold">
           {herosectioninfo.position}

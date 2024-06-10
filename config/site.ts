@@ -119,7 +119,7 @@ export const projectDetailedInfoArray = [
     projectname: "Imaginify Ai",
     projectsubtitle: "SAAS Image Editor",
     projectdescription:
-      "An SAAS Image editor with Ai feature like generative fill , background removal etc.. made utilizing cloudinary Ai",
+      "A SAAS Image editor with Ai feature like generative fill , background removal etc.. made utilizing cloudinary Ai",
     projectclient: "Personal project",
     projectTechStack: "Next js , Mongo db ,cloudinary api",
     projectIndustry: "Ai , Saas",
@@ -140,7 +140,7 @@ export const projectDetailedInfoArray = [
     projectname: "Realesto",
     projectsubtitle: "Real estate with realtime chat",
     projectdescription:
-      "Ziggo, the smart suitcase app that lets you control your luggage like a smart home! With Ziggo, you can easily lock and unlock your suitcase,check the battery level, and even receive notifications if your suitcase strays too far from you.",
+      "Realesto is a platform designed to simplify the process of finding and listing properties. It provides users with a seamless experience to discover available properties and communicate with agents in real-time through a chat option. The project is built using React for the frontend, MongoDB as the database, Prisma for ORM (Object-Relational Mapping), and socket.io for real-time communication",
 
     projectclient: "Personal project",
     projectTechStack: " Mern stack , Socket io",
@@ -153,8 +153,6 @@ export const projectDetailedInfoArray = [
     secondimage: "",
     firstdescription:
       "Realesto is a platform designed to simplify the process of finding and listing properties. It provides users with a seamless experience to discover available properties and communicate with agents in real-time through a chat option. The project is built using React for the frontend, MongoDB as the database, Prisma for ORM (Object-Relational Mapping), and socket.io for real-time communication.",
-    seconddescription:
-      "Property Search: Users can search for properties based on various criteria such as location, price range, property type, etc.  Property Listing: Property owners or agents can easily list their properties on the platform, providing detailed information and images. Real-time Chat: Users can communicate with agents in real-time through a chat option, enabling quick responses to inquiries and facilitating smoother transactions.",
   },
   {
     projectid: "3",
