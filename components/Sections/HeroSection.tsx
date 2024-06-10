@@ -27,7 +27,7 @@ export default function HeroSection({
       spread: 60,
       particleCount: 100,
       origin: {
-        y: 0.6,
+        y: 0.6
       },
     });
   };
