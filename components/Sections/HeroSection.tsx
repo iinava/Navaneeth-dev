@@ -26,9 +26,7 @@ export default function HeroSection({
     confetti({
       spread: 60,
       particleCount: 100,
-      origin: {
-        y: 0.6
-      },
+      origin: { y: 0.6 },
     });
   };
   const charvariants = {
